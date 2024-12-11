@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="wrapper">
+        <header class="header">
+            <h1>Task Master</h1>
+            
+            <nav class="nav">
+              <a href="#">My Tasks</a>
+              <a href="#">Teams</a>
+              <a href="#">Templates</a>
+            </nav>
+          </header>
+        <main>
+            <section class="inputform">
+                <form action="" class="taskForm" method="post">
+                    <input type="text" name="taskname" placeholder="Enter your Task" id="taskname" required>
+                    <label for="duedate">Due Date:</label>
+                    <input type="date" name="duedate" id="duedate" required>
+                    <select name="priority" id="priority" required>
+                        <option value="" disabled selected hidden>Priority</option>
+                        <option value="high">High Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="low">Low Priority</option>
+                    </select>
+                    <button type="submit">Add Task</button>
+                </form>
+            </section>
+            <!-- i want to display task as they are added like by storing it in array with an unique id 
+             and then display it in the list below based on their priority -->
+             <h2>Task List: </h2>
+             <section id="tasklist">
+                <ul class = "task-item"></ul>
+             </section>
+            
+        </main>
+        <footer>
+            <p>&#169; 2021 Task Manager. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+
+
+
+
